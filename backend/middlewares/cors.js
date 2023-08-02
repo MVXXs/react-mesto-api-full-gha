@@ -1,4 +1,6 @@
 const allowedCors = [
+  'http://mvxxs.nomoreparties.co',
+  'https://mvxxs.nomoreparties.co',
   'http://localhost:3000',
   'https://localhost:3000',
 ];
