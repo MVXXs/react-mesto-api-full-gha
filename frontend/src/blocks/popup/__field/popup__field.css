@@ -1,0 +1,9 @@
+.popup__field {
+    padding-top: 30px;
+    height: 40px;
+}
+
+.popup__field:first-of-type{
+    padding: 0;
+    height: 40px;
+}

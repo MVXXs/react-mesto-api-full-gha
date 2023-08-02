@@ -1,0 +1,18 @@
+.profile__avatar {
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+}
+
+.profile__avatar:hover {
+    background-image: url(../../../images/profile__avatar-pen.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0,0,0,.8);
+}
+
+@media screen and (max-width: 768px){
+    .profile__avatar {
+        margin: 0;
+    }
+}
