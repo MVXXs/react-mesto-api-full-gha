@@ -5,7 +5,7 @@ const allowedCors = [
   'https://localhost:3000',
 ];
 
-module.exports = (req, res, next) => {
+const corsConfig = (req, res, next) => {
   const { origin } = req.headers;
   const { method } = req;
 
@@ -27,3 +27,5 @@ module.exports = (req, res, next) => {
 
   return next();
 };
+
+module.exports = corsConfig;
