@@ -115,5 +115,4 @@ class Api {
     }
 }
 
-// export const apiInfo = new Api({ baseUrl: 'http://localhost:3001' });
 export const apiInfo = new Api({ baseUrl: 'https://api.mvxxs.nomoreparties.co' });

@@ -9,6 +9,6 @@
 
 IP-адрес 158.160.68.30
 
-Frontend https://...
+Frontend https://mvxxs.nomoreparties.co
 
-Backend https://...
+Backend https://api.mvxxs.nomoreparties.co
