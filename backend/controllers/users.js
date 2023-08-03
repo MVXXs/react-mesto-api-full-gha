@@ -11,7 +11,7 @@ const {
   NotFoundError, // 404
 } = require('../errors/errors');
 
-const JWT_SECRET = 'unique-secret-key';
+const { NODE_ENV, JWT_SECRET } = process.env;
 
 const SALT_ROUNDS = 10;
 
@@ -123,7 +123,7 @@ const login = (req, res, next) => {
 
   return User.findUserByCredentials(email, password)
     .then((user) => {
-      const token = jwt.sign({ _id: user._id }, JWT_SECRET, { expiresIn: '7d' });
+      const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'unique-secret-key', { expiresIn: '7d' });
       res.status(STATUS_OK).send({ token });
     })
     .catch((err) => {
