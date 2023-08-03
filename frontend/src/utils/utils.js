@@ -34,6 +34,6 @@ const validationConfig = {
     errorClass: 'popup__error_type_active'
 }; 
 
-const apiInfo = { baseUrl: 'http://api.mvxxs.nomoreparties.co' };
+const apiInfo = { baseUrl: 'https://api.mvxxs.nomoreparties.co' };
 
 export { initialCards, validationConfig, apiInfo };

@@ -1,4 +1,4 @@
-export const BASE_URL = "http://api.mvxxs.nomoreparties.co";
+export const BASE_URL = "https://api.mvxxs.nomoreparties.co";
 
 function checkDataError(res) {
     if(res.ok) {
